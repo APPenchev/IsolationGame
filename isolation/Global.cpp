@@ -1,9 +1,9 @@
 #include "Global.h"
 
-BoardState* currentBoard;
+Board::BoardState* currentBoard;
 int difficulty = 1;
 bool ingame = 0;
 
-std::array<std::function<void(BoardState*&, bool)>, 1> difficultyMoves = {
-   [](BoardState*& board, bool start) { AI_RandomMove(board, start); }
+std::array<std::function<void(Board::BoardState*&, bool)>, 1> difficultyMoves = {
+   [](Board::BoardState*& board, bool start) { Board::RandomMove(board, start); }
 };

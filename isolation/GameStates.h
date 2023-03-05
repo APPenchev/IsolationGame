@@ -196,10 +196,10 @@ class Tutorial : public GameState
 private:
 	int step = 0;
 	bool update = 0;
-	BoardState* tutorialBoard;
+	Board::BoardState* tutorialBoard;
 public:
 	void Init() {
-		tutorialBoard = new BoardState(5, 5);
+		tutorialBoard = new Board::BoardState(5, 5);
 	}
 	void Cleanup() {}
 	void HandleEvents() {
@@ -220,7 +220,7 @@ public:
 			step = 0;
 			update = false;
 			delete tutorialBoard;
-			tutorialBoard = new BoardState(5, 5);
+			tutorialBoard = new Board::BoardState(5, 5);
 		}
 		Draw();
 	}
@@ -305,7 +305,7 @@ class Game : public GameState
 {
 private:
 	int selected = 0;
-	BoardState* gameBoard;
+    Board::BoardState* gameBoard;
 	bool update = false;
 	bool move = false;
 	std::vector<std::pair<int, int>> allOMoves;
@@ -383,7 +383,7 @@ public:
 		DisplayBoard(gameBoard, true, selected);
 		std::cout << allOMoves.size() << " " << selected << " " << allOMoves[selected].first << " " << allOMoves[selected].second;
 	}
-	void setBoard(BoardState* gameBoard) { this->gameBoard = gameBoard; }
+	void setBoard(Board::BoardState* gameBoard) { this->gameBoard = gameBoard; }
 };
 
 class GameBegin : public GameState
@@ -391,10 +391,10 @@ class GameBegin : public GameState
 private:
 	int posX = 0;
 	int posY = 0;
-	BoardState* gameBoard;
+	Board::BoardState* gameBoard;
 public:
 	void Init() {
-		gameBoard = new BoardState(5, 5);
+		gameBoard = new Board::BoardState(5, 5);
 		posX = 0;
 		posY = 0;
 	}

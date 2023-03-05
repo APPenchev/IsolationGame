@@ -151,13 +151,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GameStates.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="DecisionMaker.cpp" />
     <ClCompile Include="Global.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DecisionMaker.h" />
     <ClInclude Include="GameEngine.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="Global.h" />

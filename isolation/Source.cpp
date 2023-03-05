@@ -2,8 +2,6 @@
 #include <vector>
 #include <time.h>
 #include "BoardState.h"
-#include "DecisionMaker.h"
-#include "DecisionMakerX.h"
 #include "GameEngine.h"
 #include "GameStates.h"
 #include <algorithm>
@@ -13,7 +11,6 @@ int main()
 {
 	srand(time(0));
 	GameEngine* gameEngine = new GameEngine;
-
 	MainMenu* mainMenu = new MainMenu;
 	Tutorial* tutorial = new Tutorial;
 	DifficultyMenu* difficultyMenu = new DifficultyMenu;
