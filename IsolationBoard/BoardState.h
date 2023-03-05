@@ -2,6 +2,7 @@
 #include "TreeNode.h"
 #include <vector>
 
+
 class BoardState {
 private:
 	int width;
@@ -14,10 +15,10 @@ public:
 	BoardState(int, int);
 	BoardState(int, int, int, int, int, int);
 	BoardState(BoardState&, bool, int, int);
-		
+
 	void fill();
 	void GetPossibleBoardStates(std::vector<TreeNode<BoardState*>*>&, bool);
-	void GetPossibleMoves(std::vector<std::pair<int,int>>&, bool);
+	void GetPossibleMoves(std::vector<std::pair<int, int>>&, bool);
 	int GetPossibleMoves(bool);
 
 	int getWidth() const;
@@ -37,3 +38,4 @@ void DisplayBoard(BoardState*, bool, int);
 void DisplayBoard(BoardState*, bool);
 void DisplayBoard(BoardState*);
 void DisplayBoard(BoardState*, int, int);
+

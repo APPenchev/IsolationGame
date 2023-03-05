@@ -21,9 +21,6 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BoardState.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DecisionMaker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -38,12 +35,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TreeNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BoardState.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DecisionMakerX.h">
       <Filter>Header Files</Filter>
     </ClInclude>

@@ -20,7 +20,6 @@ int main()
 	Game* inGame = new Game;
 	GameBegin* beginGame = new GameBegin;
 
-
 	gameEngine->PushState("Main_Menu",mainMenu);
 	gameEngine->PushState("Tutorial",tutorial);
 	gameEngine->PushState("Difficulty_Menu", difficultyMenu);
@@ -36,13 +35,4 @@ int main()
 		gameEngine->Run();
 	}
 }
-
-
-
-
-
-
-
-
-
 
